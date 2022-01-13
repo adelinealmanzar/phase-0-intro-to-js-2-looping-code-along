@@ -1,12 +1,12 @@
 let names = ["Guadalupe", "Ollie", "Aki"];
 
-function writeCards(namesvar, eventname) {
-    let array = [];
-    for (let i = 0; i < namesvar.length; i++) {
-        array.push(`Thank you, ${namesvar[i]}, for the wonderful ${eventname} gift!`);
+function writeCards(names, eventname) {
+    let allCards = [];
+    for(let i = 0; i < names.length; i++) {
+        allCards.push(`Thank you, ${names[i]}, for the wonderful ${eventname} gift!`);
     }
-    return array;
-};
+    return allCards;
+}
 writeCards(
     names,
     "surprise",
